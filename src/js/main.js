@@ -162,7 +162,7 @@ var draw = (function() {
     //ctx.moveTo(75, 50);
    ctx.lineTo(x2, y2);
     //ctx.lineTo(100, 75);
-    ctx.lineTo(x2*1.25, y2*1.25);
+    ctx.lineTo(x1*1.25, y1*1.25);
   //ctx.lineTo(x2+100, y2+25);
     ctx.fill();
       },
