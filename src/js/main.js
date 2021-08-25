@@ -153,7 +153,18 @@ var draw = (function() {
 
         //Draw a triangle
     drawTriangle: function() {
-        alert('I don\'t do anything yet.');
+       // alert('I don\'t do anything yet.');
+
+        ctx.fillStyle =  color;//'#'+Math.floor(Math.random()*16777215).toString(16);
+        
+    ctx.beginPath();
+   ctx.moveTo(x1, y1);
+    //ctx.moveTo(75, 50);
+   ctx.lineTo(x2, y2);
+    //ctx.lineTo(100, 75);
+    ctx.lineTo(x2*1.25, y2*1.25);
+  //ctx.lineTo(x2+100, y2+25);
+    ctx.fill();
       },
   
       getCanvas: function(){
@@ -176,11 +187,13 @@ var draw = (function() {
   
   /*get colorpicker value onChange */ 
   document.getElementById("colorpicker").addEventListener('change', (e) => {
-
+   // if (typeof(myVariable) != "undefined"){ color = "#000";}else{}
     color = e.target.value;
     console.log(color);
     
     });
+
+//need to set color value default without breaking new value
 
 
   //Add a mousemove listener to the canvas
