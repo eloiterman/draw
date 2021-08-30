@@ -222,28 +222,36 @@ var draw = (function() {
     draw.setIsDrawing(false);
   }, false);
   
-  document.getElementById('btnRect').addEventListener('click', function(){
-      draw.setShape('rectangle');
-  }, false);
-  
-  document.getElementById('btnLine').addEventListener('click', function(){
-      draw.setShape('line');
-  }, false);
-  
-  document.getElementById('btnCircle').addEventListener('click', function(){
-      draw.setShape('circle');
-  }, false);
-  
-  document.getElementById('btnPath').addEventListener('click', function(){
-      draw.setShape('path');
-  }, false);
 
-  document.getElementById('btnTri').addEventListener('click', function(){
-    draw.setShape('triangle');console.log("triangle selected");
-}, false);
+  $( "#btnRect" ).on( "click", function() {
+    draw.setShape('rectangle');
+  });
+
+
+  $( "#btnLine" ).on( "click", function() {
+    draw.setShape('line');
+  });
+
+
+  $( "#btnCircle" ).on( "click", function() {
+    draw.setShape('circle');
+  });
+
+  $( "#btnPath" ).on( "click", function() {
+    draw.setShape('path');
+  });
+
+$( "#btnTri" ).on( "click", function() {
+  draw.setShape('triangle');console.log("triangle selected");
+});
+
+
+
+
+//   <li><button id="btnTri">Triangle</button></li>
 
 
 
     
-
+ 
   
