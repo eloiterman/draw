@@ -241,10 +241,9 @@ var draw = (function() {
   document.getElementById('btnTri').addEventListener('click', function(){
     draw.setShape('triangle');console.log("triangle selected");
 }, false);
-//   <li><button id="btnTri">Triangle</button></li>
 
 
 
     
- 
+
   
